@@ -1,0 +1,15 @@
+= Changing default log level in WildFly
+
+== Standalone Mode
+
+[source, bash]
+----
+/subsystem=logging/root-logger=ROOT:write-attribute(name=level,value=WARN)
+----
+
+== Domain Mode
+
+[source, bash]
+----
+/profile=full/subsystem=logging/root-logger=ROOT:write-attribute(name=level,value=WARN)
+----
