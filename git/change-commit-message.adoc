@@ -1,0 +1,14 @@
+= Change commit message
+
+== Change message for the most recent commit
+
+[source,bash]
+----
+git commit –amend -m “new message”
+----
+
+== Change message of one of the previous commits
+
+* _git rebase <relative-HEAD-pointer> -i_ e.g. _git rebase HEAD~2 -i_
+* Find the commit with bad commit message
+* Change _pick_ with _reword_
