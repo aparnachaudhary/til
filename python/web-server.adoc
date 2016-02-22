@@ -1,0 +1,17 @@
+= Quick way to serve directory content over HTTP
+
+Change working directory to the directory to be served:
+
+[source,bash]
+----
+cd <directory_to_be_served>
+----
+
+Start the HTTP server:
+
+* Using Python 2
+
+[source, bash]
+----
+python -m SimpleHTTPServer <port>
+----
