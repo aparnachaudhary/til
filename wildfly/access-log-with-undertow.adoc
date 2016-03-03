@@ -1,0 +1,3 @@
+== Enable Access log with Undertow
+
+http://stackoverflow.com/questions/34614874/wildfly-9-access-logging
