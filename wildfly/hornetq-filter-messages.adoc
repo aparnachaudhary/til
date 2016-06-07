@@ -1,0 +1,7 @@
+= Filter HornetQ messages using CLI
+
+
+[source,bash]
+----
+[domain@localhost:9990 /] /subsystem=messaging/hornetq-server=default/jms-queue=TestQueue:list-messages(filter="_HQ_GROUP_ID LIKE '%MyText%'")
+----
