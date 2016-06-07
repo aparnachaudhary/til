@@ -5,3 +5,6 @@
 ----
 [domain@localhost:9990 /] /subsystem=messaging/hornetq-server=default/jms-queue=TestQueue:list-messages(filter="_HQ_GROUP_ID LIKE '%MyText%'")
 ----
+
+References:
+* https://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/#filter-expressions
