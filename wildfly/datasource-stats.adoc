@@ -1,0 +1,16 @@
+= Datasource Statistics using cURL
+
+
+== Standalone Mode
+
+[source,bash]
+----
+curl --digest -L -D - http://localhost:9990/management --header "Content-Type: application/json" -d '{"operation":"read-resource","address":[{"subsystem":"datasources"},{"data-source":"ExampleDS"},{"statistics":"pool"}],"include-runtime":"true","json.pretty":1}' -u admin:password
+----
+
+== Domain Mode
+
+[source,bash]
+----
+curl --digest -L -D - http://localhost:9990/management --header "Content-Type: application/json" -d '{"operation":"read-resource","address":[{"host":"master"},{"server":"server-staging"},{"subsystem":"datasources"},{"data-source":"ExampleDS"},{"statistics":"pool"}],"include-runtime":"true","json.pretty":1}' -u admin:password
+----
