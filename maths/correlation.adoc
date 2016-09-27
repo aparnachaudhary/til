@@ -1,0 +1,12 @@
+== Correlation
+
+Degree to which two phenomenon are related to each other.
+
+=== Correlation Coefficient
+
+* A number ranging between -1 and 1.
+* A correlation of -1 i.e. perfect negative correlation, means every change in one variable is associated with equivalent change in another variable in the opposite direction.
+* A correlation of 1 i.e. perfect positive correlation, means every change in one variable is associated with equivalent change in another variable in the same direction.
+* There are no units attached to correlation coefficient, which makes is easy to find the correlation between variables with different units (e.g. height vs weight)
+
+
