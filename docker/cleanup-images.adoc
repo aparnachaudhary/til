@@ -1,0 +1,8 @@
+== Remove images
+
+Following command enumerates over all images and removes them. If an image is being used by a running container, it will give error.
+
+[source,bash]
+----
+docker images -q -a | xargs --no-run-if-empty docker rmi
+----
