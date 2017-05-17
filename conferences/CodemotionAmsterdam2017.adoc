@@ -138,7 +138,11 @@ Cloud vs PaaS:
 
 === Machine Learning Exposed
 
-Slides - http://slides.com/javafxpert/machine-learning-exposed-the-fundamentals#/
+References:
+
+* http://slides.com/javafxpert/machine-learning-exposed-the-fundamentals#/
+* https://github.com/JavaFXpert/visual-neural-net-server
+* https://github.com/JavaFXpert/ng2-spring-websocket-client
 
 
 ==== Supervised Learning
@@ -163,5 +167,6 @@ What is it?
 * Give some points (called re-inforcements) to complete the task successfully
 
 
-
-
+* Input Layer
+* Output Layer - depends on the problem (classification)
+* 
