@@ -98,6 +98,11 @@ Atlassian GWT based solution
 
 === Clouds and Containers
 
+References:
+
+* https://github.com/mkheck/CloudsAndContainersDemoScripts
+* https://github.com/mkheck/CloudsAndContainers
+
 ==== Containers:
 
 * Stop promoting use of openjdk:latest (promote use of right versions)
@@ -130,4 +135,33 @@ Optional aspects in Orchestration:
 Cloud vs PaaS:
 
 * Cloud Foundry (Open Source - Join effort by different companies like Pivotal, IBM, SAP, etc)
+
+=== Machine Learning Exposed
+
+Slides - http://slides.com/javafxpert/machine-learning-exposed-the-fundamentals#/
+
+
+==== Supervised Learning
+
+What is it?
+
+* Feed dataset with features
+* Predictions with continuous value - called a regression problem
+
+* Iris dataset
+* 4 features - dimensions of Iris flower
+
+
+
+==== Unsupervised Learning
+
+* Model makes the sense of the data
+* Finding clusters in the data
+
+==== Reinforcement Learning
+
+* Give some points (called re-inforcements) to complete the task successfully
+
+
+
 
