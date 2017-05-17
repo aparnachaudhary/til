@@ -1,0 +1,133 @@
+== CodeMotion Amsterdam
+
+=== How to write maintainable code?
+
+* https://github.com/Droogans/unmaintainable-code
+* How much time to invest in code refactoring?
+** Typically for new projects, assuming you are curating code well, no dedicated effort
+** Second year of the projects - start investing 10% of team effort on code refactoring
+** Increase this effort by 10% every upcoming year
+* Spagetti codebase
+* Lasagna Architecture - Un-necessary layering in code
+* Ravioli Architecture - Microservices
+* Rule of Three - code duplication
+* ReadMe Contents
+** Purpose
+** Scope
+** Installation
+** API details
+** Architecture diagram
+
+=== Microservices; 5 Things I wish I'd known
+
+==== Monolithic issues
+* Grow Fat - Codebase grows, all things slow down
+* Age - Introduction of new technology becomes difficult
+* Ownership - 
+* Economics of Scale
+
+* Optimize for rapid aad sustainable flow of value
+
+==== Value of Microservices
+
+* Small
+* Independent lifecycle
+* Optimize for the problem
+* Replacability
+
+==== 5 Patterns
+
+===== Basics
+
+A minimal Service:
+
+* Expose a port
+* Health check - 200 UP, 500 DOWN
+* Stateless
+* Deep Check
+** Check if service fails to connect to its dependency
+
+Code and Builds - 1 repo 1 build
+Separation of config from code
+
+===== Deployments
+
+* Always deploy empty service to production
+* Developers in control
+** Artifact
+** Compute
+** Resources
+** Ownership
+** Alarms
+** Configuration
+
+===== Testing
+
+How to trust your mock?
+
+* Rely on Monitoring
+* Stable API's
+* Contract testing - for internal fast moving API's
+
+Semantic Check:
+
+Automated test runs against a node before it is added to LB.
+
+===== Security
+
+Atlassian GWT based solution
+
+===== Operations
+
+* Log aggregations
+* Circuit Breakers
+** Response times
+** Back pressure
+** Fallback - How to handle failures?
+* Request Tracing
+
+
+=== Machine Learning for Java Developers
+
+* Neural Networks - Every pixel of the image is considered as a separate neuron
+* Activation Function
+* Learning Algorithm
+** Pick up a training example (e.g. image)
+** 
+
+
+=== Clouds and Containers
+
+==== Containers:
+
+* Stop promoting use of openjdk:latest (promote use of right versions)
+* Alternatives to Docker - Joyent Triton, CoreOS, CloudFoundry
+
+Benefits containe brings (PODA):
+
+* Portable
+* Immutable
+* Faster to build
+* Lighter to distribute and run
+* Availability of pre-built blocks e.g. prebuilt images
+* Consistent across platforms, stages
+
+==== Orchestration
+
+What is Orchestration?
+
+* Handles deployment
+* Manages multiple containers
+* Maintains targetted instance count - scaling
+
+Optional aspects in Orchestration:
+
+* Routing
+* LB
+* Service Registry
+* Application Configuration
+
+Cloud vs PaaS:
+
+* Cloud Foundry (Open Source - Join effort by different companies like Pivotal, IBM, SAP, etc)
+
