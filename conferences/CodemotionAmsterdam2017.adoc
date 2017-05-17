@@ -170,3 +170,32 @@ What is it?
 * Input Layer
 * Output Layer - depends on the problem (classification)
 * 
+
+=== Cisco Contiv
+
+References:
+
+* https://contiv.github.io/documents/tutorials/container-101.html
+
+Notes:
+
+* Policy based container networking
+** Declarative Tags - Simpler
+** Manage Groups i.s.o. single objects (faster)
+* Contiv is Open Source
+* Works on Virtualized and Bare metal
+* Application itent (focused on inter-component communication) vs Operational intent (Security, Bandwidth)
+* Supports Multi-Tenancy
+* Network Isolation
+* Traffic Prioritization
+* Leverages NIC
+* Supports Microservices
+* Native support for Clustering
+* Certified by Docker
+* Certified with OpenShift
+* Full integration with Switches
+* Integrates with LDAP
+
+Q&A:
+* Mesos with HA Proxy - How does Contiv help?
+* 
