@@ -12,4 +12,6 @@ Finding details about servers corresponding to a VIP:
 dig myappname.marathon.l4lb.thisdcos.directory
 ----
 
-* Connection Loss issues with VIP - https://jira.mesosphere.com/browse/DCOS_OSS-607
+* Connection Loss issues with VIP
+* https://jira.mesosphere.com/browse/DCOS_OSS-607
+* https://jira.mesosphere.com/browse/DCOS_OSS-617
