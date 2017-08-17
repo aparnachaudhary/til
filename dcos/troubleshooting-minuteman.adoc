@@ -4,3 +4,12 @@
 ----
 journalctl -u dcos-minuteman -b
 ----
+
+Finding details about servers corresponding to a VIP:
+
+[source,bash]
+----
+dig myappname.marathon.l4lb.thisdcos.directory
+----
+
+* Connection Loss issues with VIP - https://jira.mesosphere.com/browse/DCOS_OSS-607
