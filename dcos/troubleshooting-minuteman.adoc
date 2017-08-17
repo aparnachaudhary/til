@@ -9,7 +9,25 @@ Finding details about servers corresponding to a VIP:
 
 [source,bash]
 ----
-dig myappname.marathon.l4lb.thisdcos.directory
+
+[vagrant@a1 ~]$ dig mynginxserver.marathon.l4lb.thisdcos.directory:8080
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-38.el7_3.2 <<>> mynginxserver.marathon.l4lb.thisdcos.directory:8080
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 43730
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;mynginxserver.marathon.l4lb.thisdcos.directory:8080. IN	A
+
+;; Query time: 192 msec
+;; SERVER: 198.51.100.1#53(198.51.100.1)
+;; WHEN: Thu Aug 17 19:11:31 UTC 2017
+;; MSG SIZE  rcvd: 69
+
+[vagrant@a1 ~]$ 
+
 ----
 
 * Connection Loss issues with VIP
