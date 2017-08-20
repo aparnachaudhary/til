@@ -1,0 +1,13 @@
+== DCOS vagrant ubuntu
+
+* sudo apt-get install python3
+* sudo apt-get install python3-pip
+* pip3 install virtualenv
+* vagrant plugin install vagrant-hostmanager
+* cd ~/dev/tools/dcos/dcos-vagrant-1.2.0
+* cp VagrantConfig.yaml.example VagrantConfig.yaml
+* Reduce the memory of agent node to 1GB i.s.o. 6GB
+* Update etc/config-1.9.yml add _oauth_enabled: false_
+* vagrant up
+* http://m1.dcos/
+* vagrant destroy -f
