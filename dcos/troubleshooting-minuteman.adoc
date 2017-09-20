@@ -34,3 +34,4 @@ Finding details about servers corresponding to a VIP:
 ** https://jira.mesosphere.com/browse/DCOS_OSS-607
 ** https://jira.mesosphere.com/browse/DCOS_OSS-617
 * Notes on Minuteman https://docs.google.com/presentation/d/1KkyQL_kibE3O6OovvGT_06W-4c3BSxDpDZo5w3kB7Bk/edit#slide=id.g1efc9b92e1_0_39
+* https://dcos.io/docs/1.10/overview/design/overlay/
