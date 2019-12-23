@@ -41,6 +41,35 @@ GOROOT=C:\dev\tools\Go
 GOPATH=C:\dev\repos\goworkspace
 ```
 
+```go
+package main
+
+import "fmt"
+
+func Hello() string {
+	return "Say something"
+}
+func main() {
+	fmt.Println(Hello())
+}
+```
+
+```go
+package main
+
+import "testing"
+
+func TestHello(t *testing.T) {
+	actual := Hello()
+	expected := "Say something"
+
+	if actual != expected {
+		t.Errorf("Expected %q Actual %q", expected, actual)
+	}
+}
+
+```
+
 ```
 # Executes the Go program
 go run hello.go
